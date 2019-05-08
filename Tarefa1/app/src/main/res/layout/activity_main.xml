@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#E91E63"
+        android:gravity="center_vertical"
+        android:text="Texto center"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="150dp"
+        android:background="#E47198"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Texto center/left"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="20dp"
+        tools:layout_centerInParent="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="#1B3B9B"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:text="Texto bottom/right"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TableRow
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E91E63"
+            android:gravity="center_horizontal"
+            android:padding="18dip"
+            android:textSize="20dp"
+            android:text="Texto center/Top"
+            android:textColor="#ffffff" />
+
+        <TextView
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0D1B6D"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:padding="18dip"
+            android:textSize="20dp"
+            android:text="Texto bottom"
+            android:textColor="#ffffff" />
+
+    </TableRow>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="460dp"
+        android:gravity="center_horizontal"
+        android:background="#7686DA"
+        android:textColor="#ffffff"
+        android:text="Enviar"/>
+</RelativeLayout>

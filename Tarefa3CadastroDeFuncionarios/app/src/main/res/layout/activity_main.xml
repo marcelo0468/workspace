@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="70dp"
+        android:text="Cadastro de Funcionário"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="120dp"
+        android:text="Nome"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:paddingLeft="20dp"
+        android:paddingTop="145dp"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="200dp"
+        android:text="Email"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:paddingTop="225dp"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="280dp"
+        android:text="Endereço"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Endereço"
+        android:paddingLeft="20dp"
+        android:paddingTop="305dp"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="360dp"
+        android:text="Profissão"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/profissao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Profissão"
+        android:paddingLeft="20dp"
+        android:paddingTop="385dp"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="#142AA8"
+            android:textColor="#ffffff"
+            android:text="Enviar"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

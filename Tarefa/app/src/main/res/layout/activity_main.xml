@@ -9,7 +9,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="32dp"
+        android:text="Nome"/>
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Nome" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Email"/>
     <EditText
         android:id="@+id/editTextEmail"
@@ -18,18 +29,6 @@
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:hint="Email" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha"/>
-    <EditText
-        android:id="@+id/editTextSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberPassword"
-        android:maxLines="1"
-        android:maxLength="6"
-        android:hint="Senha" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,12 +36,12 @@
         android:gravity="bottom">
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnEnviar"
             style="@style/Widget.AppCompat.Button.Colored"
             android:backgroundTint="#142AA8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Enviar"
             android:textColor="#ffffff" />
 
     </RelativeLayout>
