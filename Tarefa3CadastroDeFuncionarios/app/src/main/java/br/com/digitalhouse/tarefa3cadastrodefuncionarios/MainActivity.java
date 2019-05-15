@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Cadastro OK.", Toast.LENGTH_SHORT).show();}
             }
         });
-s
+
 
 
     }

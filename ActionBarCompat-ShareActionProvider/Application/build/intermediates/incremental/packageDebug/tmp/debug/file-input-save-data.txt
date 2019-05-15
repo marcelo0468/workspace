@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Mon May 13 18:25:55 BRT 2019
+1.base=C\:\\Users\\marce\\Desktop\\workspace\\ActionBarCompat-ShareActionProvider\\Application\\build\\intermediates\\merged_assets\\debug\\out
+2.path=photo_3.jpg
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=C\:\\Users\\marce\\Desktop\\workspace\\ActionBarCompat-ShareActionProvider\\Application\\build\\intermediates\\merged_assets\\debug\\out
+3.set=ASSET
+2.set=ASSET
+1.baseType=DIRECTORY
+3.path=photo_2.jpg
+count=4
+1.set=ASSET
+0.path=classes.dex
+3.base=C\:\\Users\\marce\\Desktop\\workspace\\ActionBarCompat-ShareActionProvider\\Application\\build\\intermediates\\merged_assets\\debug\\out
+0.set=DEX
+0.base=C\:\\Users\\marce\\Desktop\\workspace\\ActionBarCompat-ShareActionProvider\\Application\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+2.baseType=DIRECTORY
+1.path=photo_1.jpg

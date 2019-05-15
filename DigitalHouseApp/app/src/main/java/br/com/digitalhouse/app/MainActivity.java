@@ -1,5 +1,6 @@
 package br.com.digitalhouse.app;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Senha inválida", Toast.LENGTH_SHORT).show();
                     return;}
             }
+
+
         });
 
 

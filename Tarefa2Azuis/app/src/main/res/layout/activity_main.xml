@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,18 +9,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="98dp"
-        android:orientation="vertical">
+        tools:layout_editor_absoluteY="98dp">
 
         <Button
             android:id="@+id/btnCurioso"
             style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:background="#3F4EA3"
             android:gravity="center"
             android:text="Saber Curiosidade"
@@ -31,57 +30,52 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:background="#03A9F4"
             android:layout_marginTop="10dp"
+            android:background="#03A9F4"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="360dp" />
 
         <TableRow
 
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
 
                 android:layout_weight="1"
                 android:background="#0000FF"
-                android:padding="20dip"
-                />
+                android:padding="20dip" />
 
             <TextView
 
                 android:layout_weight="1"
                 android:background="#0000CF"
-                android:padding="20dip"
-               />
+                android:padding="20dip" />
 
             <TextView
 
                 android:layout_weight="1"
                 android:background="#0000AF"
-                android:padding="20dip"
-               />
+                android:padding="20dip" />
 
             <TextView
 
                 android:layout_weight="1"
                 android:background="#06061A"
-                android:padding="20dip"
-                />
+                android:padding="20dip" />
         </TableRow>
 
         <TableRow
 
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
+            <TextView
 
-            android:layout_weight="1"
-            android:background="#9393D3"
-            android:padding="45dip"
-            />
+                android:layout_weight="1"
+                android:background="#9393D3"
+                android:padding="45dip" />
 
             <TextView
 
@@ -94,15 +88,14 @@
 
         <TableRow
 
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
 
                 android:layout_weight="1"
                 android:background="#0000FF"
-                android:padding="45dip"
-                />
+                android:padding="45dip" />
 
             <TextView
 
@@ -121,10 +114,6 @@
             tools:layout_editor_absoluteY="360dp" />
 
     </LinearLayout>
-
-
-
-
 
 
 </android.support.constraint.ConstraintLayout>
