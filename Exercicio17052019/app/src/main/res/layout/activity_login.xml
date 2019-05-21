@@ -32,7 +32,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Digite seu nome"
+
             android:hint="Nome"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
@@ -51,7 +51,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Digite seu sobrenome"
+
             android:hint="Sobrenome"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
@@ -70,7 +70,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Digite sua idade"
+
             android:hint="Idade"
             android:inputType="number" />
     </android.support.design.widget.TextInputLayout>
@@ -79,9 +79,7 @@
         android:id="@+id/btnEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="53dp"
-
         android:text="Enviar"
         style="@style/ButtonTheme"
         app:layout_constraintEnd_toEndOf="parent"
