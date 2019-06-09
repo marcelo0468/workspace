@@ -3,10 +3,8 @@ package br.com.digitalhouse.digitalhousefoods.login.view.Restaurant;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -16,7 +14,6 @@ import java.util.List;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.login.profile.ProfileActivity;
-import br.com.digitalhouse.digitalhousefoods.model.CreditCard;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
 
 public class ListaDeRestaurantesActivity extends AppCompatActivity implements RecyclerViewClickListener {
