@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".contatos.view.DetalheContatoActivity"></activity>
         <activity
             android:name=".contatos.view.ContatoActivity"
             android:label="@string/app_name"

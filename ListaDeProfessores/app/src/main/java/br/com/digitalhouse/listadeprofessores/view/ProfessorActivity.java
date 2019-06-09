@@ -58,6 +58,22 @@ public class ProfessorActivity extends AppCompatActivity implements RecyclerView
         professor.add(new Professor("Hugo Rosso", "Mobile IOS", "Mini Curriculum5", R.drawable.flanders));
         professor.add(new Professor("Hendy Almeida", "Mobile Android", "Mini Curriculum6", R.drawable.burns));
         professor.add(new Professor("Vinicius", "Mobile IOS", "Mini Curriculum7", R.drawable.nerd));
+        professor.add(new Professor("Jéssica Milena", "Mobile Android", "Mini Curriculum", R.drawable.lisa));
+        professor.add(new Professor("Tairo Roberto", "Mobile Android", "Mini Curriculum1", R.drawable.homersimpson));
+        professor.add(new Professor("Fabio Tadashi", "Mobile Android", "Mini Curriculum2", R.drawable.flanders));
+        professor.add(new Professor("Guilherme", "FullStack", "Mini Curriculum3", R.drawable.burns));
+        professor.add(new Professor("Victor Caldas", "Marketing Digital", "Mini Curriculum4", R.drawable.homersimpson));
+        professor.add(new Professor("Hugo Rosso", "Mobile IOS", "Mini Curriculum5", R.drawable.flanders));
+        professor.add(new Professor("Hendy Almeida", "Mobile Android", "Mini Curriculum6", R.drawable.burns));
+        professor.add(new Professor("Vinicius", "Mobile IOS", "Mini Curriculum7", R.drawable.nerd));
+        professor.add(new Professor("Jéssica Milena", "Mobile Android", "Mini Curriculum", R.drawable.lisa));
+        professor.add(new Professor("Tairo Roberto", "Mobile Android", "Mini Curriculum1", R.drawable.homersimpson));
+        professor.add(new Professor("Fabio Tadashi", "Mobile Android", "Mini Curriculum2", R.drawable.flanders));
+        professor.add(new Professor("Guilherme", "FullStack", "Mini Curriculum3", R.drawable.burns));
+        professor.add(new Professor("Victor Caldas", "Marketing Digital", "Mini Curriculum4", R.drawable.homersimpson));
+        professor.add(new Professor("Hugo Rosso", "Mobile IOS", "Mini Curriculum5", R.drawable.flanders));
+        professor.add(new Professor("Hendy Almeida", "Mobile Android", "Mini Curriculum6", R.drawable.burns));
+        professor.add(new Professor("Vinicius", "Mobile IOS", "Mini Curriculum7", R.drawable.nerd));
         return professor;
     }
 

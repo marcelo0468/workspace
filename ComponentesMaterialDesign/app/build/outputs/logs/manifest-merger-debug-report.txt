@@ -1,0 +1,181 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3066ca9fc4ffd9658fc2ced6d9e75429\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\68903a02a15c2d49b735c1a51a4d3964\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c98beb7549bf2c3b00a035807bc35133\AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\75e66df2306f81a6e27eff4f337973bb\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c489790946ef07fc45c50e9fe519abb2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3de5134aba9f29b9d7497fbcc9c73d55\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\b2be506d93f968d95fc451f533afdfc6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c68088f9bbbd82ec31f1ffc14ded9cad\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\62e4f8ee839f253fa4edc5e0ad5298f3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\5b5d6e584f77acff7e385577ddae140e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\9f04e3b20cac60a6b62a340f9a1908f7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c0dbc274fd3aed8c214b4566f97b15e9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\0f91f28a54814bb04d98993b612679fd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\0ac49abafda7496c0faba48b99414dc9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\6693741eeae13e7a7f18464b20f146ac\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\37e22a6b42eb397f4ca3a50a89a81eec\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\213923346134bc5b4b85e8445c48cf19\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ca3e26ccc2a8e8655e7a2ee07ca20335\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\d0bee6a6affffb1bfa380be16688123c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c29d42418a6aac07e89d0746916f06d6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\35d53d6bc9eb36c42fad97a89189f408\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\566ace588e01b8adc60177085dca713b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\078f1fade80b029301350f90db062e84\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\12c40a30512c1d7e443c8b7a70a15bcc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\7f5188c291956d05566f3208e0921f1f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\e4058bf59606f36fb7c895e92d9ec62a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\085da56b883a40d8ff5d63634af5ccff\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\24fe32cedc1f368480ef58b20971bc3a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c55a6c5b8bc4a609a3669c116af2da78\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ee053e70f8604f584af489b5afbef599\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\162461d33894ec8c416ee1d8a2038a07\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ed8d79ff02dc930960579964c2429cbb\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:3:5-60
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:5:5-29:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3066ca9fc4ffd9658fc2ced6d9e75429\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3066ca9fc4ffd9658fc2ced6d9e75429\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c98beb7549bf2c3b00a035807bc35133\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c98beb7549bf2c3b00a035807bc35133\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\75e66df2306f81a6e27eff4f337973bb\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\75e66df2306f81a6e27eff4f337973bb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c29d42418a6aac07e89d0746916f06d6\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c29d42418a6aac07e89d0746916f06d6\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\35d53d6bc9eb36c42fad97a89189f408\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\35d53d6bc9eb36c42fad97a89189f408\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c29d42418a6aac07e89d0746916f06d6\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:11:9-40
+activity#br.com.digitalhouse.componentesmaterialdesign.LoginActivity
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:12:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:16:27-74
+activity#br.com.digitalhouse.componentesmaterialdesign.MainActivity
+ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:19:9-28:20
+	android:label
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:21:13-45
+	android:theme
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:22:13-56
+	android:name
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml:20:13-41
+uses-sdk
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3066ca9fc4ffd9658fc2ced6d9e75429\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3066ca9fc4ffd9658fc2ced6d9e75429\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\68903a02a15c2d49b735c1a51a4d3964\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\68903a02a15c2d49b735c1a51a4d3964\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c98beb7549bf2c3b00a035807bc35133\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c98beb7549bf2c3b00a035807bc35133\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\75e66df2306f81a6e27eff4f337973bb\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\75e66df2306f81a6e27eff4f337973bb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c489790946ef07fc45c50e9fe519abb2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c489790946ef07fc45c50e9fe519abb2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3de5134aba9f29b9d7497fbcc9c73d55\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\3de5134aba9f29b9d7497fbcc9c73d55\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\b2be506d93f968d95fc451f533afdfc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\b2be506d93f968d95fc451f533afdfc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c68088f9bbbd82ec31f1ffc14ded9cad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c68088f9bbbd82ec31f1ffc14ded9cad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\62e4f8ee839f253fa4edc5e0ad5298f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\62e4f8ee839f253fa4edc5e0ad5298f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\5b5d6e584f77acff7e385577ddae140e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\5b5d6e584f77acff7e385577ddae140e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\9f04e3b20cac60a6b62a340f9a1908f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\9f04e3b20cac60a6b62a340f9a1908f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c0dbc274fd3aed8c214b4566f97b15e9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c0dbc274fd3aed8c214b4566f97b15e9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\0f91f28a54814bb04d98993b612679fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\0f91f28a54814bb04d98993b612679fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\0ac49abafda7496c0faba48b99414dc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\0ac49abafda7496c0faba48b99414dc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\6693741eeae13e7a7f18464b20f146ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\6693741eeae13e7a7f18464b20f146ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\37e22a6b42eb397f4ca3a50a89a81eec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\37e22a6b42eb397f4ca3a50a89a81eec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\213923346134bc5b4b85e8445c48cf19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\213923346134bc5b4b85e8445c48cf19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ca3e26ccc2a8e8655e7a2ee07ca20335\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ca3e26ccc2a8e8655e7a2ee07ca20335\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\d0bee6a6affffb1bfa380be16688123c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\d0bee6a6affffb1bfa380be16688123c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c29d42418a6aac07e89d0746916f06d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c29d42418a6aac07e89d0746916f06d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\35d53d6bc9eb36c42fad97a89189f408\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\35d53d6bc9eb36c42fad97a89189f408\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\566ace588e01b8adc60177085dca713b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\566ace588e01b8adc60177085dca713b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\078f1fade80b029301350f90db062e84\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\078f1fade80b029301350f90db062e84\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\12c40a30512c1d7e443c8b7a70a15bcc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\12c40a30512c1d7e443c8b7a70a15bcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\7f5188c291956d05566f3208e0921f1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\7f5188c291956d05566f3208e0921f1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\e4058bf59606f36fb7c895e92d9ec62a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\e4058bf59606f36fb7c895e92d9ec62a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\085da56b883a40d8ff5d63634af5ccff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\085da56b883a40d8ff5d63634af5ccff\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\24fe32cedc1f368480ef58b20971bc3a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\24fe32cedc1f368480ef58b20971bc3a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c55a6c5b8bc4a609a3669c116af2da78\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\c55a6c5b8bc4a609a3669c116af2da78\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ee053e70f8604f584af489b5afbef599\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ee053e70f8604f584af489b5afbef599\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\162461d33894ec8c416ee1d8a2038a07\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\162461d33894ec8c416ee1d8a2038a07\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ed8d79ff02dc930960579964c2429cbb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\marce\.gradle\caches\transforms-2\files-2.1\ed8d79ff02dc930960579964c2429cbb\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\marce\Desktop\workspace\ComponentesMaterialDesign\app\src\main\AndroidManifest.xml

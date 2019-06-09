@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.digitalhouse.digitalhousefoods">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login.profile.RegisterCreditCardActivity"
+            android:label="Credit cards">
+        </activity>
+        <activity
+            android:name=".login.profile.ProfileActivity"
+            android:label="Profile"></activity>
+        <activity android:name=".login.view.Cardapio.DetalheCardapioActivity" />
+        <activity android:name=".login.view.Cardapio.CardapioActivity" />
+        <activity android:name=".login.view.Restaurant.ListaDeRestaurantesActivity" />
+        <activity
+            android:name=".login.profile.RegisterActivity"
+            android:label="Register" />
+        <activity android:name=".login.view.DigitalHouseFoodsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.profile.CreditCardsActivity"
+            android:label="Credit cards"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

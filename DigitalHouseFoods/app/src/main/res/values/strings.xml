@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Digital House Foods</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">REGISTER</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="save_profile">SAVE PROFILE</string>
+    <string name="credit_card">CREDIT CARD</string>
+</resources>

@@ -12,13 +12,12 @@
         <activity android:name=".view.ProfessorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.DetalheProfessorActivity">
+        <activity android:name=".view.DetalheProfessorActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
