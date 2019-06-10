@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import br.com.digitalhouse.digitalhousefoods.R;
+import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
 
 public class RecyclerViewRestaurantAdapter extends RecyclerView.Adapter<RecyclerViewRestaurantAdapter.ViewHolder> {

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import br.com.digitalhouse.digitalhousefoods.R;
+import br.com.digitalhouse.digitalhousefoods.login.view.CreditCard.CreditCardsActivity;
 
 public class ProfileActivity extends AppCompatActivity {
 

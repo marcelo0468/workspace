@@ -14,7 +14,11 @@ import java.util.List;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.login.profile.ProfileActivity;
+import br.com.digitalhouse.digitalhousefoods.login.view.Cardapio.ListaCardapioActivity;
+import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
+import br.com.digitalhouse.digitalhousefoods.model.CreditCard;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
+import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class ListaDeRestaurantesActivity extends AppCompatActivity implements RecyclerViewClickListener {
 
@@ -44,8 +48,18 @@ public class ListaDeRestaurantesActivity extends AppCompatActivity implements Re
     }
 
     @Override
+    public void onClick(RestaurantPlates plates) {
+
+    }
+
+    @Override
+    public void onClick(CreditCard card) {
+
+    }
+
+    @Override
     public void onClick(Restaurant restaurant) {
-        Intent intent = new Intent(this, DetalheRestaurantActivity.class);
+        Intent intent = new Intent(this, ListaCardapioActivity.class);
         intent.putExtra("RESTAURANT", restaurant);
         startActivity(intent);
 

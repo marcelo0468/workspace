@@ -2,12 +2,13 @@
 <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/recyclerViewCreditCard"
+    android:id="@+id/recyclerViewCardapio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".login.view.CreditCard.CreditCardsActivity"
-    tools:showIn="@layout/activity_credit_cards"
-    tools:listitem="@layout/credit_card_recyclerview">
+    tools:context=".login.view.Cardapio.ListaCardapioActivity"
+    tools:showIn="@layout/activity_cardapio"
+    tools:listitem="@layout/cardapio_recycler_view"
+    >
 
 </android.support.v7.widget.RecyclerView>

@@ -1,7 +1,7 @@
 package br.com.digitalhouse.digitalhousefoods.login.profile;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +32,7 @@ public class RegisterCreditCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(RegisterCreditCardActivity.this, "Dados gravados com sucesso", Toast.LENGTH_SHORT).show();
+                ///repassa dados do cartão
                 finish();
             }
         });

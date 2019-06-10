@@ -24,7 +24,7 @@
             android:name=".login.profile.ProfileActivity"
             android:label="Profile" />
         <activity android:name=".login.view.Cardapio.DetalheCardapioActivity" />
-        <activity android:name=".login.view.Cardapio.CardapioActivity" />
+        <activity android:name=".login.view.Cardapio.ListaCardapioActivity" />
         <activity android:name=".login.view.Restaurant.ListaDeRestaurantesActivity" />
         <activity
             android:name=".login.profile.RegisterActivity"
@@ -32,7 +32,7 @@
         <activity android:name=".login.view.DigitalHouseFoodsActivity">
         </activity>
         <activity
-            android:name=".login.profile.CreditCardsActivity"
+            android:name=".login.view.CreditCard.CreditCardsActivity"
             android:label="Credit cards"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
