@@ -32,11 +32,11 @@ public class RegisterCreditCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(RegisterCreditCardActivity.this, "Dados gravados com sucesso", Toast.LENGTH_SHORT).show();
-                ///repassa dados do cartão
                 finish();
             }
+
         });
 
-
     }
+
 }

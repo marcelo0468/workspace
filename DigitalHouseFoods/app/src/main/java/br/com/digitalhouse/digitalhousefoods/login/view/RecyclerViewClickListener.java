@@ -6,6 +6,6 @@ import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public interface RecyclerViewClickListener {
     void onClick(Restaurant restaurant);
-    void onClick(RestaurantPlates plate);
+    void onClick(RestaurantPlates plates);
     void onClick(CreditCard card);
 }

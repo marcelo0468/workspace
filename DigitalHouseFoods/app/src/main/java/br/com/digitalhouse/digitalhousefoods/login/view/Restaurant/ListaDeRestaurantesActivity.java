@@ -37,7 +37,9 @@ public class ListaDeRestaurantesActivity extends AppCompatActivity implements Re
 
     }
 
+
     private List<Restaurant> getRestaurant(){
+        
         List<Restaurant> restaurant = new ArrayList<>();
         restaurant.add(new Restaurant("Olive Garden","17985 Biscayne Blvd Aventura, FL 33160, EUA", "Close at 23pm",R.drawable.tflmain1));
         restaurant.add(new Restaurant("Red Lobster","2522 Candler Rd Decatur, GA 30032, EUA", "Close at 22pm",R.drawable.tflmain2));
