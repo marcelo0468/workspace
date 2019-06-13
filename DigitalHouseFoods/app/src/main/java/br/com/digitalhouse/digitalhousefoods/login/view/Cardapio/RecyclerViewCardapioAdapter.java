@@ -2,6 +2,7 @@ package br.com.digitalhouse.digitalhousefoods.login.view.Cardapio;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,9 +72,8 @@ public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerVi
         }
 
         public void setarConteudoNaTela(Restaurant restaurant) {
-//            imageViewRestaurantC.setImageDrawable(ContextCompat.getDrawable(imageViewRestaurantC.getContext(), menu.get(1).getPlateImage()));
-//            int i = 1 ;
-//            textViewNameC.setText(menu.get(i).getPlateName());
+            imageViewRestaurantC.setImageDrawable(ContextCompat.getDrawable(imageViewRestaurantC.getContext(), restaurant.getRestaurantImage()));
+            textViewNameC.setText(restaurant.getRestaurantName());
 
         }
     }

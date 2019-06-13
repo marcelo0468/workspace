@@ -103,10 +103,10 @@ public class ListaCardapioActivity extends AppCompatActivity implements Recycler
         restaurant.add(new Restaurant("Bubba Gump", "1501 Broadway New York, NY 10036, EUA", "Close at 22pm", R.drawable.tflmain4, rp4));
         restaurant.add(new Restaurant("Tony Roma's", "200 East Fremont St, Las Vegas, NV 89101, EUA", "Close at 00am", R.drawable.tflmain5, rp5));
 
-        Intent it = new Intent(this, DetalheCardapioActivity.class);
-        boolean menu = false;
-        it.putExtra("MENU", menu);
-        startActivity(it);
+//        Intent it = new Intent(this, DetalheCardapioActivity.class);
+//        boolean menu = false;
+//        it.putExtra("MENU", menu);
+//        startActivity(it);
         return restaurant;
     }
 
