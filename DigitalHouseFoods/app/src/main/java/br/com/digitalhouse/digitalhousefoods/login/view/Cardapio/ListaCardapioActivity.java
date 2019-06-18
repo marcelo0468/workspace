@@ -21,11 +21,11 @@ public class ListaCardapioActivity extends AppCompatActivity implements Recycler
     private RecyclerViewCardapioAdapter adapter;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_cardapio);
+
 
         recyclerView = findViewById(R.id.recyclerViewCardapio);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
@@ -34,7 +34,7 @@ public class ListaCardapioActivity extends AppCompatActivity implements Recycler
 
     }
 
-    private List<Restaurant> getMenu() {
+    private List<RestaurantPlates> getMenu() {
 
         List<RestaurantPlates> rp1 = new ArrayList<>();
         rp1.add(new RestaurantPlates("Seafood paella", "Descircao", R.drawable.plate1));
@@ -103,25 +103,23 @@ public class ListaCardapioActivity extends AppCompatActivity implements Recycler
         restaurant.add(new Restaurant("Bubba Gump", "1501 Broadway New York, NY 10036, EUA", "Close at 22pm", R.drawable.tflmain4, rp4));
         restaurant.add(new Restaurant("Tony Roma's", "200 East Fremont St, Las Vegas, NV 89101, EUA", "Close at 00am", R.drawable.tflmain5, rp5));
 
-//        Intent it = new Intent(this, DetalheCardapioActivity.class);
-//        boolean menu = false;
-//        it.putExtra("MENU", menu);
-//        startActivity(it);
-        return restaurant;
+        return rp1;
     }
 
     @Override
     public void onClick(Restaurant menu) {
+
         Intent intent = new Intent(this, DetalheCardapioActivity.class);
-        intent.putExtra("MENU", menu);
+        intent.putParcelableArrayListExtra("MENU", menu);
         startActivity(intent);
 
     }
 
     @Override
     public void onClick(RestaurantPlates menu) {
+
         Intent intent = new Intent(this, DetalheCardapioActivity.class);
-        intent.putExtra("MENU", menu);
+        intent.putParcelableArrayListExtra("MENU", menu);
         startActivity(intent);
 
     }

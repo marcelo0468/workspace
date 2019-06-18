@@ -5,13 +5,14 @@ import android.os.Parcelable;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
-public class Restaurant implements Parcelable {
+public class Restaurant extends ArrayList<Parcelable> implements Parcelable {
     private String restaurantName;
     private String restaurantAddress;
     private String restaurantHours;
     private int restaurantImage;
-    private List<RestaurantPlates> restaurantPlates = new ArrayList<RestaurantPlates>();
+    private ArrayList<Restaurant> restaurantPlates = new ArrayList<>();
 
     public Restaurant() {
     }
@@ -21,7 +22,7 @@ public class Restaurant implements Parcelable {
         this.restaurantAddress = restaurantAddress;
         this.restaurantHours = restaurantHours;
         this.restaurantImage = restaurantImage;
-        this.restaurantPlates = restaurantPlates;
+        //this.restaurantPlates = restaurantPlates;
 
     }
 
@@ -38,7 +39,36 @@ public class Restaurant implements Parcelable {
         restaurantAddress = in.readString();
         restaurantHours = in.readString();
         restaurantImage = in.readInt();
-        restaurantPlates = in.readArrayList(Restaurant.class.getClassLoader());
+        restaurantPlates = in.createTypedArrayList(RestaurantPlates.CREATOR);
+
+         final Creator<Restaurant> CREATOR = new Creator<Restaurant>() {
+            @Override
+            public Restaurant createFromParcel(Parcel in) {
+                return new Restaurant(in);
+            }
+
+            @Override
+            public Restaurant[] newArray(int size) {
+                return new Restaurant[size];
+            }
+        };
+
+
+
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(restaurantName);
+        dest.writeString(restaurantAddress);
+        dest.writeString(restaurantHours);
+        dest.writeInt(restaurantImage);
+        dest.writeTypedList(restaurantPlates);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
     public static final Creator<Restaurant> CREATOR = new Creator<Restaurant>() {
@@ -52,18 +82,6 @@ public class Restaurant implements Parcelable {
             return new Restaurant[size];
         }
     };
-
-    public CharSequence getRestaurantPlates() {
-        return (CharSequence) restaurantPlates;
-    }
-
-    public void setRestaurantPlates(List<RestaurantPlates> restaurantPlates) {
-        this.restaurantPlates = restaurantPlates;
-    }
-
-
-
-
 
     public String getRestaurantName() {
         return restaurantName;
@@ -97,23 +115,20 @@ public class Restaurant implements Parcelable {
         this.restaurantImage = restaurantImage;
     }
 
+    public ArrayList<Restaurant> getRestaurantPlates() {
+        return restaurantPlates;
+    }
 
-    @Override
-    public int describeContents() {
-        return 0;
+    public void setRestaurantPlates(ArrayList<Restaurant> restaurantPlates) {
+        this.restaurantPlates = restaurantPlates;
+    }
+
+    public static Creator<Restaurant> getCREATOR() {
+        return CREATOR;
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(restaurantName);
-        dest.writeString(restaurantAddress);
-        dest.writeString(restaurantHours);
-        dest.writeInt(restaurantImage);
-        dest.writeList(restaurantPlates);
+    public Stream<Parcelable> stream() {
+        return null;
     }
-
-
-
-
-
 }

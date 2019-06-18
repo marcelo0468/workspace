@@ -1,6 +1,5 @@
 package br.com.digitalhouse.digitalhousefoods.login.view.Cardapio;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -14,22 +13,17 @@ import java.util.List;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
-import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
+import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerViewCardapioAdapter.ViewHolder> {
 
-    private List<Restaurant> plates;
+    private List<RestaurantPlates> plates;
     private RecyclerViewClickListener listener;
 
 
 
-    private Intent getIntent() {
-        return null;
-    }
-
-
-    public RecyclerViewCardapioAdapter(List<Restaurant> restaurants, RecyclerViewClickListener listener) {
-        this.plates = restaurants;
+    public RecyclerViewCardapioAdapter(List<RestaurantPlates> plates, RecyclerViewClickListener listener) {
+        this.plates = plates;
         this.listener = listener;
     }
 
@@ -44,7 +38,7 @@ public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerVi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
-        final Restaurant plates = this.plates.get(position);
+        final RestaurantPlates plates = this.plates.get(position);
         viewHolder.setarConteudoNaTela(plates);
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,15 +59,19 @@ public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerVi
         private TextView textViewNameC;
 
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageViewRestaurantC = itemView.findViewById(R.id.imageViewRestaurantC);
             textViewNameC = itemView.findViewById(R.id.restaurantNameC);
+
+
         }
 
-        public void setarConteudoNaTela(Restaurant restaurant) {
-            imageViewRestaurantC.setImageDrawable(ContextCompat.getDrawable(imageViewRestaurantC.getContext(), restaurant.getRestaurantImage()));
-            textViewNameC.setText(restaurant.getRestaurantName());
+        public void setarConteudoNaTela(RestaurantPlates plates) {
+            imageViewRestaurantC.setImageDrawable(ContextCompat.getDrawable(imageViewRestaurantC.getContext(), plates.getPlateImage()));
+            textViewNameC.setText(plates.getPlateName());
+
 
         }
     }

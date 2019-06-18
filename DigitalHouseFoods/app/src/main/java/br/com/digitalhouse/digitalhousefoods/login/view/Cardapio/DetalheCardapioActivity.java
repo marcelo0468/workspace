@@ -7,28 +7,27 @@ import android.widget.TextView;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
-import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class DetalheCardapioActivity extends AppCompatActivity {
 
     private ImageView imageViewRestaurantC;
     private TextView textViewRestaurantNameC;
-    //ArrayList<RestaurantPlates> menu =  (ArrayList<RestaurantPlates>) getIntent().getSerializableExtra("MENU");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardapio);
 
+        imageViewRestaurantC = findViewById(R.id.imageViewMenu);
+        textViewRestaurantNameC = findViewById(R.id.textViewRestaurantName);
+
 
         if (getIntent() != null && getIntent().getExtras() != null){
-            //Restaurant menu = getIntent().getParcelableExtra("MENU");
-            Restaurant menu = (RestaurantPlates) getIntent().getSerializableExtra("MENU");
+                 Restaurant menu = getIntent().getParcelableExtra("MENU");
 
             if(menu != null){
-                imageViewRestaurantC.setImageResource(((RestaurantPlates) menu).getPlateImage());
-               //textViewRestaurantNameC.setText(menu.getRestaurantName());
-                textViewRestaurantNameC.setText(((RestaurantPlates) menu).getPlateDescription());
+                imageViewRestaurantC.setImageResource(menu.getRestaurantImage());
+                textViewRestaurantNameC.setText(menu.getRestaurantName());
 
             }
         }

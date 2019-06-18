@@ -5,7 +5,7 @@ public class RestaurantPlates extends Restaurant {
     private String plateName;
     private String plateDescription;
     private int plateImage;
-    private Restaurant restaurant;
+
 
 
     public RestaurantPlates() {
@@ -16,10 +16,6 @@ public class RestaurantPlates extends Restaurant {
         this.plateDescription = plateDescription;
         this.plateImage = plateImage;
 
-    }
-
-    public static boolean get(int i) {
-        return true;
     }
 
     public String getPlateName() {

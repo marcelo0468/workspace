@@ -5,7 +5,6 @@
     android:layout_width="260dp"
     android:layout_height="260dp"
     android:layout_gravity="center"
-    android:background="@drawable/background_card"
     tools:context=".login.profile.RegisterCreditCardActivity" >
 
     <TextView
