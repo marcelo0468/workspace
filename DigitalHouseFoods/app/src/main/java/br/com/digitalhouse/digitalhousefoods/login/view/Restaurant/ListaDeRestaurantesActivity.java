@@ -2,6 +2,7 @@ package br.com.digitalhouse.digitalhousefoods.login.view.Restaurant;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -112,7 +114,7 @@ public class ListaDeRestaurantesActivity extends AppCompatActivity implements Re
     }
 
     @Override
-    public void onClick(RestaurantPlates plates) {
+    public void onClick(Parcelable[] plates) {
 
     }
 

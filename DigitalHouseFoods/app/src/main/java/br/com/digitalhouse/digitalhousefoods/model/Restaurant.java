@@ -12,7 +12,7 @@ public class Restaurant extends ArrayList<Parcelable> implements Parcelable {
     private String restaurantAddress;
     private String restaurantHours;
     private int restaurantImage;
-    private ArrayList<Restaurant> restaurantPlates = new ArrayList<>();
+    private ArrayList<RestaurantPlates> restaurantPlates = new ArrayList<>();
 
     public Restaurant() {
     }
@@ -22,7 +22,7 @@ public class Restaurant extends ArrayList<Parcelable> implements Parcelable {
         this.restaurantAddress = restaurantAddress;
         this.restaurantHours = restaurantHours;
         this.restaurantImage = restaurantImage;
-        //this.restaurantPlates = restaurantPlates;
+        this.restaurantPlates = (ArrayList<RestaurantPlates>) restaurantPlates;
 
     }
 
@@ -34,28 +34,26 @@ public class Restaurant extends ArrayList<Parcelable> implements Parcelable {
 
     }
 
+
     protected Restaurant(Parcel in) {
         restaurantName = in.readString();
         restaurantAddress = in.readString();
         restaurantHours = in.readString();
         restaurantImage = in.readInt();
         restaurantPlates = in.createTypedArrayList(RestaurantPlates.CREATOR);
-
-         final Creator<Restaurant> CREATOR = new Creator<Restaurant>() {
-            @Override
-            public Restaurant createFromParcel(Parcel in) {
-                return new Restaurant(in);
-            }
-
-            @Override
-            public Restaurant[] newArray(int size) {
-                return new Restaurant[size];
-            }
-        };
-
-
-
     }
+
+    public static final Creator<RestaurantPlates> CREATOR = new Creator<RestaurantPlates>() {
+        @Override
+        public RestaurantPlates createFromParcel(Parcel in) {
+            return new RestaurantPlates(in);
+        }
+
+        @Override
+        public RestaurantPlates[] newArray(int size) {
+            return new RestaurantPlates[size];
+        }
+    };
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
@@ -71,17 +69,6 @@ public class Restaurant extends ArrayList<Parcelable> implements Parcelable {
         return 0;
     }
 
-    public static final Creator<Restaurant> CREATOR = new Creator<Restaurant>() {
-        @Override
-        public Restaurant createFromParcel(Parcel in) {
-            return new Restaurant(in);
-        }
-
-        @Override
-        public Restaurant[] newArray(int size) {
-            return new Restaurant[size];
-        }
-    };
 
     public String getRestaurantName() {
         return restaurantName;
@@ -115,15 +102,15 @@ public class Restaurant extends ArrayList<Parcelable> implements Parcelable {
         this.restaurantImage = restaurantImage;
     }
 
-    public ArrayList<Restaurant> getRestaurantPlates() {
+    public ArrayList<RestaurantPlates> getRestaurantPlates() {
         return restaurantPlates;
     }
 
-    public void setRestaurantPlates(ArrayList<Restaurant> restaurantPlates) {
+    public void setRestaurantPlates(ArrayList<RestaurantPlates> restaurantPlates) {
         this.restaurantPlates = restaurantPlates;
     }
 
-    public static Creator<Restaurant> getCREATOR() {
+    public static Creator<RestaurantPlates> getCREATOR() {
         return CREATOR;
     }
 

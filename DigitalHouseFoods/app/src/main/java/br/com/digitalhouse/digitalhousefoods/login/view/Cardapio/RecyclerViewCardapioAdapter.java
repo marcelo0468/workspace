@@ -1,5 +1,6 @@
 package br.com.digitalhouse.digitalhousefoods.login.view.Cardapio;
 
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -9,22 +10,28 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
+import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
 import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerViewCardapioAdapter.ViewHolder> {
 
-    private List<RestaurantPlates> plates;
+    private Restaurant plates;
     private RecyclerViewClickListener listener;
 
 
 
-    public RecyclerViewCardapioAdapter(List<RestaurantPlates> plates, RecyclerViewClickListener listener) {
+    public RecyclerViewCardapioAdapter(Restaurant plates, RecyclerViewClickListener listener) {
         this.plates = plates;
         this.listener = listener;
+    }
+
+    public RecyclerViewCardapioAdapter(Restaurant menu, ListaCardapioActivity listener) {
+
     }
 
 
@@ -38,8 +45,8 @@ public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerVi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
-        final RestaurantPlates plates = this.plates.get(position);
-        viewHolder.setarConteudoNaTela(plates);
+        final Restaurant plates = (RestaurantPlates) this.plates.get(position);
+        viewHolder.setarConteudoNaTela((RestaurantPlates) plates);
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +66,6 @@ public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerVi
         private TextView textViewNameC;
 
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageViewRestaurantC = itemView.findViewById(R.id.imageViewRestaurantC);
@@ -68,9 +74,9 @@ public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerVi
 
         }
 
-        public void setarConteudoNaTela(RestaurantPlates plates) {
+        public void setarConteudoNaTela(br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates plates) {
             imageViewRestaurantC.setImageDrawable(ContextCompat.getDrawable(imageViewRestaurantC.getContext(), plates.getPlateImage()));
-            textViewNameC.setText(plates.getPlateName());
+            textViewNameC.setText(plates.getPlateDescription());
 
 
         }

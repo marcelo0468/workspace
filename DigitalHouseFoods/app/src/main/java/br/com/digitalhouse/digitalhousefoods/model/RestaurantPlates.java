@@ -1,5 +1,7 @@
 package br.com.digitalhouse.digitalhousefoods.model;
 
+import android.os.Parcel;
+
 public class RestaurantPlates extends Restaurant {
 
     private String plateName;
@@ -8,7 +10,7 @@ public class RestaurantPlates extends Restaurant {
 
 
 
-    public RestaurantPlates() {
+    public RestaurantPlates(Parcel in) {
     }
 
     public RestaurantPlates(String plateName, String plateDescription, int plateImage) {

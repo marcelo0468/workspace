@@ -2,6 +2,7 @@ package br.com.digitalhouse.digitalhousefoods.login.view.CreditCard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,7 +18,6 @@ import br.com.digitalhouse.digitalhousefoods.login.profile.RegisterCreditCardAct
 import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
 import br.com.digitalhouse.digitalhousefoods.model.CreditCard;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
-import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class CreditCardsActivity extends AppCompatActivity implements RecyclerViewClickListener {
 
@@ -64,7 +64,7 @@ public class CreditCardsActivity extends AppCompatActivity implements RecyclerVi
     }
 
     @Override
-    public void onClick(RestaurantPlates plate) {
+    public void onClick(Parcelable[] plate) {
 
     }
 
