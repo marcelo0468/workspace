@@ -32,7 +32,7 @@ public class DatailActivity extends AppCompatActivity {
     private TextView textViewPrice;
     private TextView textViewPages;
     private AppBarLayout appBarLayout;
-    private Toolbar toolbar;
+
 
     private Result result;
 
@@ -43,7 +43,6 @@ public class DatailActivity extends AppCompatActivity {
 
         initViews();
 
-        //setSupportActionBar(toolbar);
 
         result = getIntent().getParcelableExtra("comic");
         String transitionName = getIntent().getStringExtra("transitionName");
@@ -55,20 +54,21 @@ public class DatailActivity extends AppCompatActivity {
         textViewPages.setText(result.getPageCount().toString());
 
 
-        Picasso.get().load(result.getThumbnail().getPath() + "/portrait_incredible." + result.getThumbnail().getExtension())
-
+        Picasso.get()
+                .load(result.getThumbnail().getPath() + "/portrait_small." + result.getThumbnail().getExtension())
                 .placeholder(R.drawable.marvel_logo)
-                .error(R.drawable.marvel_logo)
+                .error(R.drawable.marvel)
                 .into(imageHero);
 
         if (!result.getImages().isEmpty()) {
-            Picasso.get().load(result.getImages().get(0).getPath() + "/landscape_incredible." + result.getImages().get(0).getExtension())
+            Picasso.get()
+                    .load(result.getImages().get(0).getPath() + "/landscape_small." + result.getImages().get(0).getExtension())
                     .placeholder(R.drawable.marvel)
                     .error(R.drawable.marvel)
                     .into(imageBackground);
         }
 
-        // Mudadamos a forma de mostrar a data DE '2007-10-31 00:00:00' para 'qua, 31 out 2007'
+
         try {
             SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.getDefault());
             SimpleDateFormat format = new SimpleDateFormat("EEE, d MMM yyyy", Locale.getDefault());
@@ -79,8 +79,7 @@ public class DatailActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Adicionamos o evendo se click na imagem para irmos para tela
-        // que mostra a imagem inteira
+
         imageHero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,7 +89,7 @@ public class DatailActivity extends AppCompatActivity {
             }
         });
 
-        // Adicionamos o evento de click para finalizarmos a activity
+
         imageBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,13 +98,12 @@ public class DatailActivity extends AppCompatActivity {
         });
 
 
-        // Adicionamos o evento de scroll, para mostrar ou não a imagem pequena do quadrinho
+
         appBarLayout.addOnOffsetChangedListener((AppBarLayout.BaseOnOffsetChangedListener) (appBarLayout, verticalOffset) -> {
             if (verticalOffset == 0) {
                 imageHero.setVisibility(View.VISIBLE);
             } else if (Math.abs(verticalOffset) >= appBarLayout.getTotalScrollRange()) {
                 imageHero.setVisibility(View.GONE);
-                //toolbar.setTitle(result.getTitle());
             } else {
                 imageHero.setVisibility(View.VISIBLE);
             }
@@ -123,6 +121,5 @@ public class DatailActivity extends AppCompatActivity {
         textViewPrice = findViewById(R.id.textViewPrice);
         textViewPages = findViewById(R.id.textViewPages);
         appBarLayout = findViewById(R.id.app_bar);
-        //toolbar = findViewById(R.id.toolbar);
     }
 }

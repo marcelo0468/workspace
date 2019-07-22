@@ -14,8 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiService {
 
 
-    private static final String BASE_URL = "https://gateway.marvel.com/v1/public/";
-
+    public static final String BASE_URL = "https://gateway.marvel.com/v1/public/";
 
     private static Retrofit retrofit;
 
@@ -25,9 +24,9 @@ public class ApiService {
 
             // configurações da conexão
             OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
-            httpClient.readTimeout(30, TimeUnit.SECONDS);
-            httpClient.connectTimeout(30, TimeUnit.SECONDS);
-            httpClient.writeTimeout(30, TimeUnit.SECONDS);
+            httpClient.readTimeout(59, TimeUnit.SECONDS);
+            httpClient.connectTimeout(59, TimeUnit.SECONDS);
+            httpClient.writeTimeout(59, TimeUnit.SECONDS);
 
             // Se for Debug habilitamos os logs
             if (BuildConfig.DEBUG) {

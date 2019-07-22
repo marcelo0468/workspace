@@ -23,7 +23,7 @@ public class ZoomActivity extends AppCompatActivity {
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_zoom);
 
-        
+
         imageComic = findViewById(R.id.imageComic);
         imageClose = findViewById(R.id.imageViewClose);
 
@@ -33,7 +33,7 @@ public class ZoomActivity extends AppCompatActivity {
 
         Picasso.get().load(image)
                 .placeholder(R.drawable.marvel_logo)
-                .error(R.drawable.marvel_logo)
+                .error(R.drawable.marvel)
                 .into(imageComic);
 
 

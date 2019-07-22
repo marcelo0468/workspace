@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerMarvel.setAdapter(adapter);
         adapter = new RecyclerViewMarvelAdapter(new ArrayList<>());
         recyclerMarvel.setHasFixedSize(true);
-        recyclerMarvel.setItemViewCacheSize(20);
+        recyclerMarvel.setItemViewCacheSize(30);
         recyclerMarvel.setAdapter(adapter);
         recyclerMarvel.setLayoutManager(new GridLayoutManager(this, 3));
 

@@ -77,15 +77,18 @@ public class RecyclerViewMarvelAdapter extends RecyclerView.Adapter<RecyclerView
         }
 
         public void bind(Result results) {
-            textView.setText("# " + results.getIssueNumber());
+
 
             if(results.getThumbnail() != null){
-                Picasso
-                        .get().load(results.getThumbnail().getPath() + "/portrait_incredible." + results.getThumbnail().getExtension())
+                String poster = results.getThumbnail().getPath() + "/portrait_small." + results.getThumbnail().getExtension();
+                Picasso.get()
+                        .load(poster)
                         .placeholder(R.drawable.marvel)
                         .error(R.drawable.marvel)
                         .into(imageView);
             }
+
+            textView.setText("# " + results.getIssueNumber());
 
         }
     }
