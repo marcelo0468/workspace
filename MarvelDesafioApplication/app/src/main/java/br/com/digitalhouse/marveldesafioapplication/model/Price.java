@@ -6,6 +6,7 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.Expose;
 
+@SuppressWarnings("unused")
 public class Price implements Parcelable {
 
     @Expose

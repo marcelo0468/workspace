@@ -8,7 +8,7 @@ import com.google.gson.annotations.Expose;
 
 import java.util.List;
 
-
+@SuppressWarnings("unused")
 public class Stories implements Parcelable {
 
     @Expose
@@ -27,7 +27,6 @@ public class Stories implements Parcelable {
             available = in.readLong();
         }
         collectionURI = in.readString();
-        items = in.createTypedArrayList(Item.CREATOR);
         if (in.readByte() == 0) {
             returned = null;
         } else {
@@ -93,7 +92,6 @@ public class Stories implements Parcelable {
             dest.writeLong(available);
         }
         dest.writeString(collectionURI);
-        dest.writeTypedList(items);
         if (returned == null) {
             dest.writeByte((byte) 0);
         } else {

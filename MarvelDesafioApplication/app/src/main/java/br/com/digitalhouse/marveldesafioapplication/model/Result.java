@@ -4,69 +4,50 @@ package br.com.digitalhouse.marveldesafioapplication.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.gson.annotations.Expose;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.util.List;
 
+@Entity(tableName = "comics")
 public class Result implements Parcelable {
 
-    @Expose
+    public Result() {
+    }
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo (name = "idComic")
+    private long idComic;
+
     private Characters characters;
-    @Expose
     private List<Object> collectedIssues;
-    @Expose
     private List<Object> collections;
-    @Expose
     private Creators creators;
-    @Expose
     private List<Date> dates;
-    @Expose
     private String description;
-    @Expose
     private String diamondCode;
-    @Expose
     private Long digitalId;
-    @Expose
     private String ean;
-    @Expose
     private Events events;
-    @Expose
     private String format;
-    @Expose
     private Long id;
-    @Expose
     private List<Image> images;
-    @Expose
     private String isbn;
-    @Expose
     private String issn;
-    @Expose
-    private String issueNumber;
-    @Expose
+    private Long issueNumber;
     private String modified;
-    @Expose
     private Long pageCount;
-    @Expose
     private List<Price> prices;
-    @Expose
     private String resourceURI;
-    @Expose
     private Series series;
-    @Expose
     private Stories stories;
-    @Expose
     private List<TextObject> textObjects;
-    @Expose
     private Thumbnail thumbnail;
-    @Expose
     private String title;
-    @Expose
     private String upc;
-    @Expose
     private List<Url> urls;
-    @Expose
     private String variantDescription;
-    @Expose
     private List<Object> variants;
 
     protected Result(Parcel in) {
@@ -94,7 +75,7 @@ public class Result implements Parcelable {
         if (in.readByte() == 0) {
             issueNumber = null;
         } else {
-            issueNumber = in.readString();
+            issueNumber = in.readLong();
         }
         modified = in.readString();
         if (in.readByte() == 0) {
@@ -125,6 +106,16 @@ public class Result implements Parcelable {
             return new Result[size];
         }
     };
+
+
+    public long getIdComic() {
+        return idComic;
+    }
+
+    public void setIdComic(long idComic) {
+        this.idComic = idComic;
+    }
+
 
     public Characters getCharacters() {
         return characters;
@@ -246,11 +237,11 @@ public class Result implements Parcelable {
         this.issn = issn;
     }
 
-    public String getIssueNumber() {
+    public Long getIssueNumber() {
         return issueNumber;
     }
 
-    public void setIssueNumber(String issueNumber) {
+    public void setIssueNumber(Long issueNumber) {
         this.issueNumber = issueNumber;
     }
 
@@ -392,7 +383,7 @@ public class Result implements Parcelable {
             dest.writeByte((byte) 0);
         } else {
             dest.writeByte((byte) 1);
-            dest.writeString(issueNumber);
+            dest.writeLong(issueNumber);
         }
         dest.writeString(modified);
         if (pageCount == null) {

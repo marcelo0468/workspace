@@ -6,6 +6,8 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.Expose;
 
+
+@SuppressWarnings("unused")
 public class Series implements Parcelable {
 
     @Expose

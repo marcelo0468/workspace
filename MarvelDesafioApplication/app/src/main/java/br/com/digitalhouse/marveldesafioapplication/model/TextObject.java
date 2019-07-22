@@ -6,6 +6,7 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.Expose;
 
+@SuppressWarnings("unused")
 public class TextObject implements Parcelable {
 
     @Expose

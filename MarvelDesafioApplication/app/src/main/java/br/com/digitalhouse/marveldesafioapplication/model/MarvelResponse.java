@@ -3,62 +3,29 @@ package br.com.digitalhouse.marveldesafioapplication.model;
 
 import com.google.gson.annotations.Expose;
 
-
 public class MarvelResponse {
 
     @Expose
-    private int code;
-    @Expose
-    private String status;
-    @Expose
-    private String copyright;
+    private String attributionHTML;
     @Expose
     private String attributionText;
     @Expose
-    private String attributionHTML;
+    private Long code;
+    @Expose
+    private String copyright;
     @Expose
     private Data data;
     @Expose
     private String etag;
+    @Expose
+    private String status;
 
-
-    public MarvelResponse() {
+    public String getAttributionHTML() {
+        return attributionHTML;
     }
 
-
-    public MarvelResponse(int code, String status, String copyright, String attributionText, String attributionHTML, Data data, String etag) {
-        super();
-        this.code = code;
-        this.status = status;
-        this.copyright = copyright;
-        this.attributionText = attributionText;
+    public void setAttributionHTML(String attributionHTML) {
         this.attributionHTML = attributionHTML;
-        this.data = data;
-        this.etag = etag;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getCopyright() {
-        return copyright;
-    }
-
-    public void setCopyright(String copyright) {
-        this.copyright = copyright;
     }
 
     public String getAttributionText() {
@@ -69,12 +36,20 @@ public class MarvelResponse {
         this.attributionText = attributionText;
     }
 
-    public String getAttributionHTML() {
-        return attributionHTML;
+    public Long getCode() {
+        return code;
     }
 
-    public void setAttributionHTML(String attributionHTML) {
-        this.attributionHTML = attributionHTML;
+    public void setCode(Long code) {
+        this.code = code;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
     }
 
     public Data getData() {
@@ -91,6 +66,14 @@ public class MarvelResponse {
 
     public void setEtag(String etag) {
         this.etag = etag;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 }

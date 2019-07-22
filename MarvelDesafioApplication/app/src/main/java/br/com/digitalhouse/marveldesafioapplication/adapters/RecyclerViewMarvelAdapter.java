@@ -17,7 +17,6 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import br.com.digitalhouse.marveldesafioapplication.R;
-import br.com.digitalhouse.marveldesafioapplication.model.MarvelResponse;
 import br.com.digitalhouse.marveldesafioapplication.model.Result;
 import br.com.digitalhouse.marveldesafioapplication.ui.DatailActivity;
 
@@ -46,23 +45,19 @@ public class RecyclerViewMarvelAdapter extends RecyclerView.Adapter<RecyclerView
         Result results = this.results.get(position);
         holder.bind(results);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        holder.itemView.setOnClickListener(v -> {
+            String transitionName = "image_" + position;
+            Intent intent = new Intent(holder.itemView.getContext(), DatailActivity.class);
+            intent.putExtra("comic", results);
+            intent.putExtra("transitionName", transitionName);
 
-                String transitionName = "image_" + position;
-                Intent intent = new Intent(holder.itemView.getContext(), DatailActivity.class);
-                intent.putExtra("comic", results);
-                intent.putExtra("transitionName", transitionName);
+            holder.imageView.setTransitionName(transitionName);
 
-                holder.imageView.setTransitionName(transitionName);
+            ActivityOptionsCompat options = ActivityOptionsCompat.
+                    makeSceneTransitionAnimation((Activity) holder.itemView.getContext(),
+                            holder.imageView, transitionName);
 
-                ActivityOptionsCompat options = ActivityOptionsCompat.
-                        makeSceneTransitionAnimation((Activity) holder.itemView.getContext(),
-                                holder.imageView, transitionName);
-
-                holder.itemView.getContext().startActivity(intent, options.toBundle());
-            }
+            holder.itemView.getContext().startActivity(intent, options.toBundle());
         });
     }
 
@@ -82,10 +77,11 @@ public class RecyclerViewMarvelAdapter extends RecyclerView.Adapter<RecyclerView
         }
 
         public void bind(Result results) {
-            textView.setText(results.getIssueNumber());
+            textView.setText("# " + results.getIssueNumber());
 
             if(results.getThumbnail() != null){
-                Picasso.get().load(results.getThumbnail().getPath() + "/portrait_incredible." + results.getThumbnail().getExtension())
+                Picasso
+                        .get().load(results.getThumbnail().getPath() + "/portrait_incredible." + results.getThumbnail().getExtension())
                         .placeholder(R.drawable.marvel)
                         .error(R.drawable.marvel)
                         .into(imageView);
