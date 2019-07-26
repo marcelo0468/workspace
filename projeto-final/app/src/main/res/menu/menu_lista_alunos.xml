@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".ListaAlunosActivity">
     <item
         android:id="@+id/menu_enviar_notas"
-        android:title="Enviar notas"
+        android:checkable="false"
+
+        android:enabled="false"
         android:icon="@drawable/ic_enviar"
+        android:menuCategory="secondary"
+        android:title="Enviar notas"
+        android:visible="true"
         app:showAsAction="always" />
 </menu>

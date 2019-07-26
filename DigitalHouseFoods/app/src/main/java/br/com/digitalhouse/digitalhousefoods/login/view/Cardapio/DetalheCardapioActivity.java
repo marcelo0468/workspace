@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import br.com.digitalhouse.digitalhousefoods.R;
-import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
+import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class DetalheCardapioActivity extends AppCompatActivity {
 
@@ -23,7 +23,8 @@ public class DetalheCardapioActivity extends AppCompatActivity {
 
 
         if (getIntent() != null && getIntent().getExtras() != null){
-                 Restaurant menu = getIntent().getParcelableExtra("MENU");
+                RestaurantPlates menu = getIntent().getParcelableExtra("MENU");
+                //Log.i("TAG", menu.getPlateName() );
 
             if(menu != null){
                 imageViewRestaurantC.setImageResource(menu.getRestaurantImage());

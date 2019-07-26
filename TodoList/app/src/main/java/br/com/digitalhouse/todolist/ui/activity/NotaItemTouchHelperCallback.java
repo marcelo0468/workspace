@@ -4,7 +4,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import br.com.digitalhouse.todolist.dao.NotaDAO;
 import br.com.digitalhouse.todolist.ui.recyclerviewadapter.ListaNotasAdapter;
 
 class NotaItemTouchHelperCallback extends ItemTouchHelper.Callback {
@@ -26,7 +25,7 @@ class NotaItemTouchHelperCallback extends ItemTouchHelper.Callback {
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder viewHolder1) {
         int posicaoInicial = viewHolder.getAdapterPosition();
         int posicaoFinal = viewHolder1.getAdapterPosition();
-        new NotaDAO().troca(posicaoInicial, posicaoFinal);
+        //new NotaDAO().troca(posicaoInicial, posicaoFinal);
         adapter.troca(posicaoInicial, posicaoFinal);
         return true;
     }
@@ -34,7 +33,7 @@ class NotaItemTouchHelperCallback extends ItemTouchHelper.Callback {
     @Override
     public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
         int posicaoDaNotaDeslizada = viewHolder.getAdapterPosition();
-        new NotaDAO().remove(posicaoDaNotaDeslizada);
+        //new NotaDAO().remove(posicaoDaNotaDeslizada);
         adapter.remove(posicaoDaNotaDeslizada);
     }
 }

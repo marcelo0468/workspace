@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "324368958048",
+    "firebase_url": "https://fir-marcelo-819eb.firebaseio.com",
+    "project_id": "fir-marcelo-819eb",
+    "storage_bucket": "fir-marcelo-819eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324368958048:android:8279ec49f74eea34",
+        "android_client_info": {
+          "package_name": "br.com.digitalhouse.firebasemarceloapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324368958048-72biup6akfbbucf0uc6lak0dv5u16lht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.digitalhouse.firebasemarceloapplication",
+            "certificate_hash": "4e0d453c948d710df8c44bbfbc4befa36c0cdc5f"
+          }
+        },
+        {
+          "client_id": "324368958048-qtnji9u2ti85rh0tff9mallih86sicd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Graun4GH_dt9wRUeC0zMR_ztDv6sgEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324368958048-qtnji9u2ti85rh0tff9mallih86sicd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

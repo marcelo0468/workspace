@@ -1,9 +1,12 @@
 
 package br.com.digitalhouse.marveldesafioapplication.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 
-public class MarvelResponse {
+public class MarvelResponse implements Parcelable {
 
     @Expose
     private String attributionHTML;
@@ -19,6 +22,32 @@ public class MarvelResponse {
     private String etag;
     @Expose
     private String status;
+
+    protected MarvelResponse(Parcel in) {
+        attributionHTML = in.readString();
+        attributionText = in.readString();
+        if (in.readByte() == 0) {
+            code = null;
+        } else {
+            code = in.readLong();
+        }
+        copyright = in.readString();
+        data = in.readParcelable(Data.class.getClassLoader());
+        etag = in.readString();
+        status = in.readString();
+    }
+
+    public static final Creator<MarvelResponse> CREATOR = new Creator<MarvelResponse>() {
+        @Override
+        public MarvelResponse createFromParcel(Parcel in) {
+            return new MarvelResponse(in);
+        }
+
+        @Override
+        public MarvelResponse[] newArray(int size) {
+            return new MarvelResponse[size];
+        }
+    };
 
     public String getAttributionHTML() {
         return attributionHTML;
@@ -76,4 +105,24 @@ public class MarvelResponse {
         this.status = status;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(attributionHTML);
+        dest.writeString(attributionText);
+        if (code == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeLong(code);
+        }
+        dest.writeString(copyright);
+        dest.writeParcelable(data, flags);
+        dest.writeString(etag);
+        dest.writeString(status);
+    }
 }

@@ -41,7 +41,7 @@ public class MarvelRepository {
     public static final String PRIVATE_KEY = "85e82eb670932a44982ae2245ebec0921e8b7e39" ;
 
     public Single<MarvelResponse> obterListaMarvelInternet(){
-        String ts = Long.toString(System.currentTimeMillis() / 3000);
+        String ts = Long.toString(System.currentTimeMillis() / 1000);
         String hash = md5(ts + PRIVATE_KEY + PUBLIC_KEY);
 
         return getApiService().getMarvel("magazine", "comic", true, "focDate", "30", ts, hash, PUBLIC_KEY);

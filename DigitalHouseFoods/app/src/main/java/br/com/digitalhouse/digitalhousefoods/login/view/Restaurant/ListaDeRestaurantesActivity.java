@@ -10,13 +10,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.login.profile.ProfileActivity;
-import br.com.digitalhouse.digitalhousefoods.login.view.Cardapio.ListaCardapioActivity;
+import br.com.digitalhouse.digitalhousefoods.login.view.Cardapio.DetalheCardapioActivity;
 import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
 import br.com.digitalhouse.digitalhousefoods.model.CreditCard;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
@@ -26,6 +25,7 @@ public class ListaDeRestaurantesActivity extends AppCompatActivity implements Re
 
     private RecyclerView recyclerView;
     private RecyclerViewRestaurantAdapter adapter;
+    private Object RestaurantPlates;
 
 
     @Override
@@ -126,8 +126,8 @@ public class ListaDeRestaurantesActivity extends AppCompatActivity implements Re
     @Override
     public void onClick(Restaurant restaurant) {
 
-        Intent intent = new Intent(this, ListaCardapioActivity.class);
-        intent.putParcelableArrayListExtra("RESTAURANT", restaurant);
+        Intent intent = new Intent(this, DetalheCardapioActivity.class);
+        intent.putParcelableArrayListExtra("RESTAURANT", (ArrayList<? extends Parcelable>) RestaurantPlates);
         startActivity(intent);
 
     }

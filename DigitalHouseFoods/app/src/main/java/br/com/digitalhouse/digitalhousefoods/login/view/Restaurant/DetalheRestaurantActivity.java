@@ -2,7 +2,7 @@ package br.com.digitalhouse.digitalhousefoods.login.view.Restaurant;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +23,7 @@ public class DetalheRestaurantActivity extends AppCompatActivity {
 
         if (getIntent() != null && getIntent().getExtras() != null){
             Restaurant restaurant = getIntent().getParcelableExtra("RESTAURANT");
+            Log.i("TAG", restaurant.getRestaurantName() );
 
             if(restaurant != null){
                 imageViewRestaurant.setImageResource(restaurant.getRestaurantImage());

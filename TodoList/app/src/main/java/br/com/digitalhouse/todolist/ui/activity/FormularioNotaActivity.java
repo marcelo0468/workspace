@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import br.com.digitalhouse.todolist.R;
+import br.com.digitalhouse.todolist.dao.NotasDAO;
 import br.com.digitalhouse.todolist.model.Nota;
 
 import static br.com.digitalhouse.todolist.ui.activity.NotaActivityConstantes.CHAVE_NOTA;
@@ -20,6 +21,7 @@ public class FormularioNotaActivity extends AppCompatActivity {
     private int posicaoRecebida = POSICAO_INVALIDA;
     private TextView titulo;
     private TextView descricao;
+    private NotasDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,7 @@ public class FormularioNotaActivity extends AppCompatActivity {
     }
 
     private Nota criaNota() {
+        dao.insert(new Nota(titulo.getText().toString(), descricao.getText().toString()));
         return new Nota(titulo.getText().toString(), descricao.getText().toString());
     }
 

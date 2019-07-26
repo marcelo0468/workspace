@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/textViewNomeProduto"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nome Produto" />
+
+    <TextView
+        android:id="@+id/textViewPreco"
+        android:textColor="#666363"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Preço: R$ 00,00" />
+
+
+</LinearLayout>

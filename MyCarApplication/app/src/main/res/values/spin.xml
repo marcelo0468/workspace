@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="comb_array">
+        <item>Etanol Aditivado</item>
+        <item>Etanol Comum</item>
+        <item>Diesel</item>
+        <item>Gasolina Comum</item>
+        <item>Gasolina Aditivada</item>
+    </string-array>
+</resources>

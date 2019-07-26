@@ -9,7 +9,8 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import java.util.List;
 import br.com.digitalhouse.todolist.R;
-import br.com.digitalhouse.todolist.dao.NotaDAO;
+import br.com.digitalhouse.todolist.dao.Database;
+import br.com.digitalhouse.todolist.dao.NotasDAO;
 import br.com.digitalhouse.todolist.model.Nota;
 import br.com.digitalhouse.todolist.ui.recyclerviewadapter.ListaNotasAdapter;
 import br.com.digitalhouse.todolist.ui.recyclerviewadapter.listener.OnItemClickListener;
@@ -24,15 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ListaNotasAdapter adapter;
+    private NotasDAO dao;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Nota nota = new Nota("Titulo", "nonononono");
+        dao.insert(nota);
         List<Nota> todasNotas = pegaTodasNotas();
         configuraRecyclerView(todasNotas);
         configuraBotaoInsereNota();
+
+
     }
 
     private void configuraBotaoInsereNota() {
@@ -51,29 +57,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private List<Nota> pegaTodasNotas() {
-        NotaDAO dao = new NotaDAO();
-        return dao.todos();
+        List<Nota> notas = dao.getAll();
+        return notas;
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(ehResultadoComNota(requestCode, resultCode, data)){
-           Nota notaRecebida = (Nota) data.getSerializableExtra(CHAVE_NOTA);
+            Nota notaRecebida = (Nota) data.getSerializableExtra(CHAVE_NOTA);
             adiciona(notaRecebida);
         }
 
         if(requestCode == CODIGO_REQUISICAO_ALTERA_NOTA && requestCode == CODIGO_RESULTADO_NOTA_CRIADA && temNota(data) && data.hasExtra(CHAVE_POSICAO)){
             Nota notaRecebida = (Nota) data.getSerializableExtra(CHAVE_NOTA);
             int posicaoRecebida = data.getIntExtra(CHAVE_POSICAO, POSICAO_INVALIDA);
-            new NotaDAO().altera(posicaoRecebida, notaRecebida);
+            dao.update(notaRecebida);
             adapter.altera(posicaoRecebida,notaRecebida);
         }
 
     }
 
     private void adiciona(Nota notaRecebida) {
-        new NotaDAO().insere(notaRecebida);
+        dao.insert(notaRecebida);
         adapter.adiciona(notaRecebida);
     }
 

@@ -1,6 +1,5 @@
 package br.com.digitalhouse.digitalhousefoods.login.view.Cardapio;
 
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -10,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.login.view.RecyclerViewClickListener;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
@@ -20,12 +16,12 @@ import br.com.digitalhouse.digitalhousefoods.model.RestaurantPlates;
 
 public class RecyclerViewCardapioAdapter extends RecyclerView.Adapter<RecyclerViewCardapioAdapter.ViewHolder> {
 
-    private Restaurant plates;
+    private RestaurantPlates plates;
     private RecyclerViewClickListener listener;
 
 
 
-    public RecyclerViewCardapioAdapter(Restaurant plates, RecyclerViewClickListener listener) {
+    public RecyclerViewCardapioAdapter(RestaurantPlates plates, RecyclerViewClickListener listener) {
         this.plates = plates;
         this.listener = listener;
     }
