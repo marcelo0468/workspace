@@ -20,10 +20,10 @@ public class RecyclerViewAbastecimentoAdapter extends RecyclerView.Adapter<Recyc
     private List<Abastecimento> abastecimentos;
     private RecyclerViewOnItemClickListener listener;
 
-    public RecyclerViewAbastecimentoAdapter(List<Abastecimento> abastecimentos, RecyclerViewOnItemClickListener listener) {
-        this.abastecimentos = abastecimentos;
-        this.listener = listener;
-    }
+//    public RecyclerViewAbastecimentoAdapter(List<Abastecimento> abastecimentos, RecyclerViewOnItemClickListener listener) {
+//        this.abastecimentos = abastecimentos;
+//        this.listener = listener;
+//    }
 
     public RecyclerViewAbastecimentoAdapter(List<Abastecimento> abastecimentoList, MainActivity mainActivity) {
         this.abastecimentos = abastecimentoList;
@@ -63,16 +63,19 @@ public class RecyclerViewAbastecimentoAdapter extends RecyclerView.Adapter<Recyc
 
         private TextView textViewOdometro;
         private TextView textViewLitros;
+        private TextView textViewNomeDoPosto;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewOdometro = itemView.findViewById(R.id.odometro);
             textViewLitros = itemView.findViewById(R.id.litros);
+            textViewNomeDoPosto = itemView.findViewById(R.id.nomeDoPosto);
         }
 
         public void bind(Abastecimento abastecimento) {
-            textViewOdometro.setText(abastecimento.getOdometro());
-            textViewLitros.setText((int) abastecimento.getLitros());
+            textViewOdometro.setText(String.valueOf(abastecimento.getOdometro()));
+            textViewLitros.setText(String.valueOf(abastecimento.getLitros()));
+            textViewNomeDoPosto.setText(abastecimento.getNomeDoPosto());
         }
     }
 }

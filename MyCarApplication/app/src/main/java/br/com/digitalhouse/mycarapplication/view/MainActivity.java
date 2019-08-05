@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -46,16 +47,22 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerViewAbastecimento.setLayoutManager(layoutManager);
 
-        dao = Database.getDatabase(this).abastecimentoDAO();
         adapter = new RecyclerViewAbastecimentoAdapter(abastecimentoList, this);
 
+        recyclerViewAbastecimento.setAdapter(adapter);
+
+        dao = Database.getDatabase(this).abastecimentoDAO();
+
         atualizaLista();
+
 
         FloatingActionButton fab = findViewById(R.id.floatingActionButton);
         fab.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, AbastecimentoActivity.class);
             startActivity(intent);
         });
+
+
     }
 
     void atualizaLista() {

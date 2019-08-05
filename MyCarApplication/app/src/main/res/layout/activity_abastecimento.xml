@@ -180,7 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPreco" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputLayoutNomeDoPosto"
+        android:id="@+id/textInputLayoutNomeDoPosto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -192,7 +192,7 @@
         app:layout_constraintTop_toBottomOf="@+id/switchFullFill">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextInputEditTextNomeDoPosto"
+            android:id="@+id/textInputEditTextNomeDoPosto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences"
@@ -207,8 +207,8 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/colorAccent"
         android:text="@android:string/ok"
-        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutNomeDoPosto"
-        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutNomeDoPosto"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutNomeDoPosto" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutNomeDoPosto"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutNomeDoPosto"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutNomeDoPosto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

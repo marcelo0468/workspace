@@ -3,10 +3,10 @@ package br.com.digitalhouse.mycarapplication.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import java.sql.Time;
 import java.util.Date;
 
 @Entity(tableName = "abastecimento")
@@ -14,30 +14,51 @@ public class Abastecimento implements Parcelable {
 
     @PrimaryKey(autoGenerate = true)
     private long id;
+
+    @ColumnInfo(name = "dataAbastecimento")
     private Date dataAbastecimento;
+
+    @ColumnInfo(name = "horaAbastecimento")
     private String horaAbastecimento;
+
+    @ColumnInfo(name = "odometro")
     private int odometro;
+
+    @ColumnInfo(name = "combustivel")
     private String combustivel;
+
+    @ColumnInfo(name = "preco")
     private double preco;
+
+    @ColumnInfo(name = "valorTotal")
     private double valorTotal;
+
+    @ColumnInfo(name = "litros")
     private double litros;
+
+    @ColumnInfo(name = "completando")
     private boolean completando;
-    private String NomeDoPosto;
 
-    public Abastecimento() {
-    }
+    @ColumnInfo(name = "nomeDoPosto")
+    private String nomeDoPosto;
 
-    public Abastecimento(Date dataAbastecimento, String horaAbastecimento, int odometro, String combustivel, double preco, double valorTotal, double litros, boolean completando, String nomeDoPosto) {
-        this.dataAbastecimento = dataAbastecimento;
-        this.horaAbastecimento = horaAbastecimento;
+    public Abastecimento(int odometro, double litros, String nomeDoPosto) {
         this.odometro = odometro;
-        this.combustivel = combustivel;
-        this.preco = preco;
-        this.valorTotal = valorTotal;
         this.litros = litros;
-        this.completando = completando;
-        NomeDoPosto = nomeDoPosto;
+        this.nomeDoPosto = nomeDoPosto;
     }
+
+//    public Abastecimento(Date dataAbastecimento, String horaAbastecimento, int odometro, String combustivel, double preco, double valorTotal, double litros, boolean completando, String nomeDoPosto) {
+//        this.dataAbastecimento = dataAbastecimento;
+//        this.horaAbastecimento = horaAbastecimento;
+//        this.odometro = odometro;
+//        this.combustivel = combustivel;
+//        this.preco = preco;
+//        this.valorTotal = valorTotal;
+//        this.litros = litros;
+//        this.completando = completando;
+//        this.nomeDoPosto = nomeDoPosto;
+//    }
 
 
     protected Abastecimento(Parcel in) {
@@ -48,7 +69,7 @@ public class Abastecimento implements Parcelable {
         valorTotal = in.readDouble();
         litros = in.readDouble();
         completando = in.readByte() != 0;
-        NomeDoPosto = in.readString();
+        nomeDoPosto = in.readString();
     }
 
     public static final Creator<Abastecimento> CREATOR = new Creator<Abastecimento>() {
@@ -63,8 +84,6 @@ public class Abastecimento implements Parcelable {
         }
     };
 
-    public Abastecimento(int odometro, double litros) {
-    }
 
     public Date getDataAbastecimento() {
         return dataAbastecimento;
@@ -131,11 +150,11 @@ public class Abastecimento implements Parcelable {
     }
 
     public String getNomeDoPosto() {
-        return NomeDoPosto;
+        return nomeDoPosto;
     }
 
     public void setNomeDoPosto(String nomeDoPosto) {
-        NomeDoPosto = nomeDoPosto;
+        this.nomeDoPosto = nomeDoPosto;
     }
 
     public long getId() {
@@ -160,6 +179,6 @@ public class Abastecimento implements Parcelable {
         dest.writeDouble(valorTotal);
         dest.writeDouble(litros);
         dest.writeByte((byte) (completando ? 1 : 0));
-        dest.writeString(NomeDoPosto);
+        dest.writeString(nomeDoPosto);
     }
 }

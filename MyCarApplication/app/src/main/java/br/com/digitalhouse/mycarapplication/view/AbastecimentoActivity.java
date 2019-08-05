@@ -34,6 +34,7 @@ public class AbastecimentoActivity extends AppCompatActivity {
     private Button ok;
     private TextInputLayout textInputLayoutOdometro;
     private TextInputLayout textInputLayoutLitros;
+    private TextInputLayout textInputLayoutNomeDoPosto;
     private AbastecimentoDAO dao;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -44,6 +45,7 @@ public class AbastecimentoActivity extends AppCompatActivity {
 
         textInputLayoutOdometro = findViewById(R.id.textInputLayoutOdometro);
         textInputLayoutLitros = findViewById(R.id.textInputLayoutLitros);
+        textInputLayoutNomeDoPosto = findViewById(R.id.textInputLayoutNomeDoPosto);
 
         setUpToolbar();
         setTitle("Abastecimento");
@@ -65,9 +67,10 @@ public class AbastecimentoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int odometro = Integer.parseInt(textInputLayoutOdometro.getEditText().getText().toString());
                 double litros = Double.parseDouble(textInputLayoutLitros.getEditText().getText().toString());
+                String nomeDoPosto = textInputLayoutNomeDoPosto.getEditText().getText().toString();
 
                 new Thread(()-> {
-                    dao.insert(new Abastecimento(odometro, litros));
+                    dao.insert(new Abastecimento(odometro, litros, nomeDoPosto));
                 }).start();
                 finish();
             }
